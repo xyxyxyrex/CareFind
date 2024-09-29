@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/registerFragment">
+
+    <!-- Initial Registration Fragment -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.avengers.carefind.RegisterFragment"
+        android:label="Register">
+        <action
+            android:id="@+id/action_registerFragment_to_registerClientOneFragment"
+            app:destination="@id/registerClientOneFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_registerCaregiverOneFragment"
+            app:destination="@id/registerCaregiverOneFragment" />
+    </fragment>
+
+    <!-- Client Registration Steps -->
+    <fragment
+        android:id="@+id/registerClientOneFragment"
+        android:name="com.avengers.carefind.RegisterClientOneFragment"
+        android:label="Client Basic Info">
+        <action
+            android:id="@+id/action_registerClientOneFragment_to_registerClientTwoFragment"
+            app:destination="@id/registerClientTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerClientTwoFragment"
+        android:name="com.avengers.carefind.RegisterClientTwoFragment"
+        android:label="Client Condition Info">
+        <action
+            android:id="@+id/action_registerClientTwoFragment_to_registerClientThreeFragment"
+            app:destination="@id/registerClientThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerClientThreeFragment"
+        android:name="com.avengers.carefind.RegisterClientThreeFragment"
+        android:label="Client Credentials">
+        <action
+            android:id="@+id/action_registerClientThreeFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+
+    <!-- Caregiver Registration Steps -->
+    <fragment
+        android:id="@+id/registerCaregiverOneFragment"
+        android:name="com.avengers.carefind.RegisterCaregiverOneFragment"
+        android:label="Caregiver Basic Info">
+        <action
+            android:id="@+id/action_registerCaregiverOneFragment_to_registerCaregiverTwoFragment"
+            app:destination="@id/registerCaregiverTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerCaregiverTwoFragment"
+        android:name="com.avengers.carefind.RegisterCaregiverTwoFragment"
+        android:label="Caregiver Experience">
+        <action
+            android:id="@+id/action_registerCaregiverTwoFragment_to_registerCaregiverThreeFragment"
+            app:destination="@id/registerCaregiverThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerCaregiverThreeFragment"
+        android:name="com.avengers.carefind.RegisterCaregiverThreeFragment"
+        android:label="Caregiver Credentials">
+        <action
+            android:id="@+id/action_registerCaregiverThreeFragment_to_caregiverConfirmationFragment"
+            app:destination="@id/caregiverConfirmationFragment" />
+    </fragment>
+
+    <!-- Confirmation Fragment -->
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.avengers.carefind.ConfirmationFragment"
+        android:label="Confirmation" />
+    <fragment
+        android:id="@+id/caregiverConfirmationFragment"
+        android:name="com.avengers.carefind.CaregiverConfirmationFragment"
+        android:label="Caregiver Confirmation"/>
+</navigation>

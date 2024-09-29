@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etConditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Conditions of Patient" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender" />
+
+    <EditText
+        android:id="@+id/etTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tasks (Can add tags)" />
+
+    <EditText
+        android:id="@+id/etBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Budget (Textbox Range)" />
+
+    <Spinner
+        android:id="@+id/spinnerCaregiverType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+</LinearLayout>

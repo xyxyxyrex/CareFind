@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Circle Buttons for Client or Caregiver -->
+    <Button
+        android:id="@+id/btnClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I am a Client" />
+
+    <Button
+        android:id="@+id/btnCaregiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I am a Caregiver" />
+</LinearLayout>
